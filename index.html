@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+  </script>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Condiment|Sigmar+One" rel="stylesheet">
+  <script type="text/javascript"></script>
+
+</head>
+
+<body>
+<script src="assets/javascript/game.js" type="text/javascript"> </script>
+
+<h1> Crystal Collector! </h1>
+
+  <div class="container">
+
+    <h3>Rules of the Game</h3>
+  <hr>
+    <p class="gameRules">
+    1) You will be given a random number at the start of the game. </p>
+
+    <p class="gameRules">2) There are four crystals below. By clicking on a crystal you will add a specific number of points to your total score. </p>
+
+    <p class="gameRules">3) You win the game by matching your total score to the random game number, you lose the game if your total score goes above the random number. </p>
+
+    <p class="gameRules">4) The value of each jewel is hidden from you until you click on it. </p>
+
+    <p class="gameRules">5) After each round the value of each crystal will change, the loss or win counter will go up, and the random number will reset to something different. Good luck! </p>
+
+<div class="containNumbers">
+  <div class="numberHeader">
+      Random Number
+      <div id="computerNumber"></div>
+  </div>
+
+  <div class="numberHeader">
+    Your Number Total
+    <div id="userInputFromCrystals"></div>
+  </div>
+
+    <div class="wins_and_losses">
+      <b>Wins</b> <div id="displayWins"></div>
+      <b>Losses</b><div id="displayLosses"></div>
+    </div>
+</div>
+
+    <div class="pictureHolder">
+          <div id="pic1" onclick="addJewelValue1()">
+            <img class="jewelPic" src="assets/images/256.png">
+          </div>
+          <div id="pic2" onclick="addJewelValue2()">
+            <img class="jewelPic" src="assets/images/Aha-Soft-Jewelry-Gem.ico">
+          </div>
+          <div id="pic3" onclick="addJewelValue3()">
+            <img class="jewelPic"src="assets/images/Emerald.png">
+          </div>
+          <div id="pic4" onclick="addJewelValue4()">
+            <img class="jewelPic"src="assets/images/Zircon.png">
+          </div>
+    </div>
+    <!-- <div id="totalScore"></div> -->
+
+</div>
+<!-- // put in a class for each crystal titled jewelPic -->
+</body>
+</html>
